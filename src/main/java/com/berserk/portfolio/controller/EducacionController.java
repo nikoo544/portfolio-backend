@@ -35,17 +35,17 @@ public class EducacionController {
     public boolean delete(@PathVariable("id") int id) {
         return educacionService.remove(id);
     }
-//
-//    @PutMapping("/educacion/{id}")
-//    public Educacion update(@RequestBody Educacion educacion,@PathVariable int id) {
-//
-//        Optional<Educacion> educacionActualizada = educacionService.findById(id);
-//        educacionActualizada.setInstitucion(educacion.getInstitucion());
-//        educacionActualizada.setTitulo(educacion.getTitulo());
-//        educacionActualizada.setFechaInicio(educacion.getFechaInicio());
-//        educacionActualizada.setFechaFin(educacion.getFechaFin());
-//
-//        return educacionService.save(educacionActualizada);
-//    }
+
+    @PutMapping("/educacion/{id}")
+    public Educacion update(@RequestBody Educacion educacion,@PathVariable int id) {
+
+        Educacion educacionActualizada = educacionService.findById(id).get();
+        educacionActualizada.setInstitucion(educacion.getInstitucion());
+        educacionActualizada.setTitulo(educacion.getTitulo());
+        educacionActualizada.setFechaInicio(educacion.getFechaInicio());
+        educacionActualizada.setFechaFin(educacion.getFechaFin());
+
+        return educacionService.save(educacionActualizada);
+    }
 
 }
