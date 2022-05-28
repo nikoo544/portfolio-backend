@@ -1,13 +1,13 @@
-package com.cavanosa.virtual;
+package com.berserk.portfolio;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class VirtualApplication {
+public class PortfolioApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(VirtualApplication.class, args);
+		SpringApplication.run(PortfolioApplication.class, args);
 	}
 
 }

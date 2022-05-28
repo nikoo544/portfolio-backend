@@ -1,4 +1,4 @@
-package com.cavanosa.virtual.dto;
+package com.berserk.portfolio.dto;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;

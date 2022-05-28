@@ -1,4 +1,4 @@
-package com.cavanosa.virtual;
+package com.berserk.portfolio;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

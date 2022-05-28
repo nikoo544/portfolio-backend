@@ -1,4 +1,4 @@
-package com.cavanosa.virtual.dto;
+package com.berserk.portfolio.dto;
 
 public class Mensaje {
     private String mensaje;
