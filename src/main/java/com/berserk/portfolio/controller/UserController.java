@@ -28,7 +28,7 @@ public class UserController {
         return userService.findById(integer);
     }
 
-    @PutMapping("/skill/{id}")
+    @PutMapping("/user/{id}")
     public Persona update(@RequestBody Persona persona , @PathVariable int id){
         Persona persona1 = userService.findById(id).get();
         persona1.setNombre(persona.getNombre());
