@@ -24,6 +24,10 @@ public class UserService {
         return personaRepository.findAll();
     }
 
+    public Persona save(Persona persona) {
+        return personaRepository.save(persona);
+    }
+
     public Optional<Persona> findById(Integer integer) {
         return personaRepository.findById(integer);
     }
